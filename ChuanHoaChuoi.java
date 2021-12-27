@@ -1,9 +1,14 @@
 package buoi4;
 
 import java.util.Scanner;
-
+/*
+ * Theo như bảng mã ASCII thì tất cả các ký tự chữ hoa (A-Z) có giá trị ASCII nằm trong khoảng từ 65 đến 90. 
+ * Các ký tự chữ thường tương ứng (a-z) của chúng có giá trị ASCII từ 97 đến 122 (hơn 32).
+ * Các ký tự số tương ứng(0-9)của chúng có giá trị ASCII từ 48 đến 57
+ * */
 public class ChuanHoaChuoi {
 
+	// function chuyen ve chu thuong
 	public static String chuyenVeChuThuong(String input) {
 		char[] charArray = input.toCharArray();
 		for (int i = 0; i < charArray.length; i++) {
@@ -14,6 +19,7 @@ public class ChuanHoaChuoi {
 		return (input = String.valueOf(charArray));
 	}
 
+	// function chuyen ve chu hoa
 	public static String chuyenVeChuHoa(String input) {
 
 		char[] charArray = input.toCharArray();
@@ -25,6 +31,7 @@ public class ChuanHoaChuoi {
 		return (input = String.valueOf(charArray));
 	}
 
+	//	// function In  ra cac ky tu so
 	public static void inKyTuSo(String input) {
 		char[] charArray = input.toCharArray();
 		for (int i = 0; i < charArray.length; i++) {
